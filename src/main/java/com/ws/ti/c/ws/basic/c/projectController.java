@@ -46,4 +46,13 @@ public class projectController {
         return product;
     }
 
+    @RequestMapping("/data/buku")
+    @ResponseBody
+    public ArrayList<String> getDataBuku() {
+        Book buku = new Book();
+
+        return buku.dataBuku();
+    }
+
+
 }
